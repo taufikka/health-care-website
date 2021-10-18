@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AboutUs from './Pages/AboutUs/AboutUs';
+import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home/Home';
 import ServiceDetails from './Pages/Home/ServiceDetails/ServiceDetails';
 import NotFound from './Pages/NotFound/NotFound';
@@ -24,6 +26,14 @@ function App() {
 
           <Route exact path='/service/:id'>
             <ServiceDetails></ServiceDetails>
+          </Route>
+
+          <Route exact path='/about'>
+            <AboutUs></AboutUs>
+          </Route>
+
+          <Route exact path='/contact'>
+            <Contact></Contact>
           </Route>
 
           <Route path='*'>
