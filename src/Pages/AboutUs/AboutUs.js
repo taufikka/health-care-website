@@ -27,8 +27,8 @@ const AboutUs = () => {
 
             </div>
 
-            <div className="row row-cols-1 row-cols-md-2 g-4 my-4">
-                <div className="col">
+            <div className="row row-cols-1 row-cols-md-2 g-5 my-4 d-flex justify-content-center">
+                <div className="col" style={{ width: '400px', height: '450px' }}>
                     <div className="card">
                         <img src='https://www.soliseyecare.com/images/help/Dr.%20K%20Sridhar.jpg' className="img-fluid" alt="..." />
                         <div className="card-body">
@@ -37,7 +37,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col">
+                <div className="col" style={{ width: '400px', height: '450px' }}>
                     <div className="card">
                         <img src="https://www.soliseyecare.com/images/help/doctor2.jpg" className="img-fluid" alt="..." />
                         <div className="card-body">
@@ -46,7 +46,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col">
+                <div className="col" style={{ width: '400px', height: '450px' }}>
                     <div className="card">
                         <img src="https://www.soliseyecare.com/images/help/doctor3.jpg" className="card-img-top" alt="..." />
                         <div className="card-body">
@@ -55,7 +55,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col">
+                <div className="col" style={{ width: '400px', height: '450px' }}>
                     <div className="card">
                         <img src="https://www.soliseyecare.com/images/help/doctor7.jpg" className="card-img-top" alt="..." />
                         <div className="card-body">

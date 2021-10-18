@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import useFirebase from '../../../hooks/useFirebase';
 import './Header.css'
 
 const Header = () => {
+    const { user, logOut } = useFirebase();
+    console.log(user)
+
     const activeStyle = {
         fontWeight: "bold",
         color: "red"
@@ -18,8 +22,15 @@ const Header = () => {
                         <NavLink activeStyle={activeStyle} className='nav' to="/home">Home</NavLink>
                         <NavLink activeStyle={activeStyle} className='nav' to="/about">About Us</NavLink>
                         <NavLink activeStyle={activeStyle} className='nav' to="/contact">Contact Us</NavLink>
+
+                        {
+                            user?.email ? <Link to='/'> <button onClick={logOut} className='mx-2 btn-danger'>Log out</button> </Link>
+                                :
+                                <NavLink activeStyle={activeStyle} className='nav' to="/login">Login</NavLink>
+                        }
+
                         <Navbar.Text>
-                            Signed in as: <a href="#login">Mark Otto</a>
+                            Logged in as: <small className='fw-bold'>{user?.displayName}</small>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>

@@ -43,9 +43,6 @@ const Contact = () => {
                 <textarea name="" id="" cols="35" rows="5" placeholder=' Write your message'></textarea> <br />
                 <button className='btn btn-success btn-lg px-5'>Send</button>
             </div>
-
-
-
         </div>
     );
 };

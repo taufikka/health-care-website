@@ -15,7 +15,6 @@ const Banner = () => {
                 </div>
                 <div className="col-md-7 col-12 text-center">
                     <img className='w-75' src={image} alt="" />
-
                 </div>
             </div>
         </div>

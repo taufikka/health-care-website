@@ -18,11 +18,9 @@ const ServiceDetails = () => {
         <div>
             <div className="card my-3 border-0">
                 <div>
-
                     <div className='text-center'>
                         <img src={exactService[0]?.img} className="card-img-top w-50" alt="..." />
                     </div>
-
                     <div className="card-body">
                         <h5 className="card-title fs-3 fw-bolder text-center">{exactService[0]?.name}</h5>
                         <p className="card-text px-5"> {exactService[0]?.description}</p>
