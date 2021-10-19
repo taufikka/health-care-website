@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
@@ -66,6 +67,13 @@ const Register = () => {
                 <button type="submit" onClick={handleRegister} className="btn btn-success w-100">Register</button>
             </form>
             <p className='text-center text-danger fs-3 fw-bold'>or</p>
+
+            <div className='text-center'>
+                <Link to='/login'>
+                    <button className="btn btn-success w-50 px-2 mx-2 my-2">Already have an account?</button>
+                </Link>
+            </div>
+
             <div className='text-center'>
                 <button onClick={signInUsingGoogle} className="btn btn-success w-50 px-3 mb-5">Google Sign In</button>
             </div>
