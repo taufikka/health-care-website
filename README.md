@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Evercare Hospital
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My project site link: (https://health-care-web.web.app/).
 
-## Available Scripts
+## Simple React Project
 
-In the project directory, you can run:
+In the project, I try to build MPA using react-router, context api, firebase for authentication and used css framework bootstrap for responsive site.
 
-### `npm start`
+### React Core Things
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the project, I used react core concepts JSX, Components, Props, Event, State, UseEffect and also used router, router hooks, custom hooks, context api etc. This project help me to learn more about routing pages using react.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### React authentication 
 
-### `npm test`
+In the project, I try to authenticate users by two option. One is google login and another one is email,password login after sign up. I used firebase authentication approach.
+I also do private route authentication for specific page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Context api and Custom hook
 
-### `npm run build`
+In the project, I used one custom hook for firebase authentication all approaches. Then lastly i used alternative of custom hook, context api for whole app control. Context api used custom hooks data and handle all code easily from app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### My project Concepts and features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I try to build a simple react MPA based on health care related information. In my project, Header section shows navigation of four pages are home,about,contact,login. Header and Footer section is same for all pages.Body section will change depending on page switch. In home page, At first top section start with title and 
+banner then there are some cards of eye disease treatment. When click any card read more button it will navigate to another page for more details. Details page is private route, after login user can show all details. Then in about page, doctor and hospital related details information is describe.In contact page, there is necessary option like email,phone-number,address for connect.Lastly for authentication login option here, user can use google for login or email password sign up. After user login their name will appear in header section. User when try to visit any page that does not exist site will show 404 error.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In future, I will try to add more features in site and update my MPA.

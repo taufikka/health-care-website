@@ -5,12 +5,13 @@ import './service.css'
 
 const Service = props => {
     const { id, name, img, description } = props.service;
-
+    // dynamic url for route change
     const url = `/service/${id}`;
 
     return (
         <div>
             <Col className='card box-shadow'>
+                {/* single service card */}
                 <Card>
                     <Card.Img className='img-fluid' variant="top h-100" src={img} />
                     <Card.Body>

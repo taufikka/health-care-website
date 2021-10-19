@@ -4,6 +4,7 @@ import image from '../../images/img2.jpg'
 const AboutUs = () => {
     return (
         <div className='container'>
+            {/* banner part */}
             <div className='row'>
                 <div className="col-md-5 col-12">
                     <img className='w-75 my-4' src={image} alt="" />
@@ -20,13 +21,13 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-
+            {/* title part */}
             <div className='my-4 text-center'>
                 <h1 className='fw-bold'>MEET OUR<span className='text-warning'> DOCTORS</span></h1>
                 <h6>We Have Best Professional Team To Care Your Eyes <i className="fas fa-eye"></i></h6>
 
             </div>
-
+            {/* doctors and infos */}
             <div className="row row-cols-1 row-cols-md-2 g-5 my-4 d-flex justify-content-center">
                 <div className="col" style={{ width: '400px', height: '450px' }}>
                     <div className="card">

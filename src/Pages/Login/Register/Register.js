@@ -1,56 +1,69 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [error, setError] = useState('');
 
 
-    const { signInUsingGoogle, handleUserRegister, } = useAuth();
-
+    const { signInUsingGoogle, handleUserRegister } = useAuth();
+    // form reload handle
     const handleSubmit = e => {
+        console.log(email, password)
         e.preventDefault();
+        // error show
+        if (password.length < 6) {
+            setError('password must be 6 character')
+            return;
+        }
     }
-
+    // email input
     const handleEmailChange = e => {
         setEmail(e.target.value)
     }
-
+    // password input
     const handlePasswordChange = e => {
         setPassword(e.target.value)
     }
-
+    // register click handler
     const handleRegister = () => {
-        handleUserRegister(email, password)
+        handleUserRegister(email, password, name)
+    }
+    // user name input
+    const handleNameChange = e => {
+        setName(e.target.value)
     }
 
     return (
+        // user register form part
         <div className='w-50 mx-auto my-5'>
             <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
-                    <label HtmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
+                    <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" id="inputName" />
+                        <input onBlur={handleNameChange} type="text" className="form-control" id="inputName" />
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <label HtmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                     <div className="col-sm-10">
-                        <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" />
+                        <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" required />
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <label HtmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
+                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                     <div className="col-sm-10">
-                        <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" />
+                        <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
 
-                <Link to='/home'>
-                    <button onClick={handleRegister} type="submit" className="btn btn-success w-100">Register</button>
-                </Link>
+                <div className="my-2 text-danger fw-bold text-center">
+                    {error}
+                </div>
+                <button type="submit" onClick={handleRegister} className="btn btn-success w-100">Register</button>
             </form>
             <p className='text-center text-danger fs-3 fw-bold'>or</p>
             <div className='text-center'>

@@ -3,11 +3,12 @@ import './Contact.css'
 const Contact = () => {
     return (
         <div>
+            {/* top part */}
             <div className='section'>
                 <h1 className='fw-bold'>Contact Us</h1>
                 <p className='fs-5'>Have queries before the appointment?</p>
             </div>
-
+            {/* contact options part */}
             <div className='row my-4 px-2'>
                 <div className='col-12 col-md-4 text-center'>
                     <i className="fas fa-map-marker-alt fs-3 text-success mb-2"></i>
@@ -35,7 +36,7 @@ const Contact = () => {
                     </p>
                 </div>
             </div>
-
+            {/* email queries part */}
             <div className='text-center my-3'>
                 <h3 className='fw-bolder'>Write Your Queries</h3>
                 <input type="text" name="" placeholder='Enter your name' id="" className='my-2 mx-1' />

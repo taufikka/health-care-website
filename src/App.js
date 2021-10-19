@@ -17,6 +17,7 @@ function App() {
   return (
     <div>
       <AuthProvider>
+        {/* all of routing page */}
         <Router>
           <Header />
           <Switch>

@@ -2,8 +2,9 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className='bg-dark text-white '>
-            <div className="row footer container">
+        // social media follow
+        <div className='bg-dark text-white'>
+            <div className="row footer">
                 <div className="col-5">
                     <p className="ms-4 mt-4 fw-bolder">Follow us</p>
                     <div className='d-flex m-3 fs-3'>
@@ -12,6 +13,7 @@ const Footer = () => {
                         <i className="fab fa-linkedin-in m-2"></i>
                     </div>
                 </div>
+                {/* others link for informations */}
                 <div className="col-7 mt-4">
                     <div className='row'>
                         <div className='col-6'>

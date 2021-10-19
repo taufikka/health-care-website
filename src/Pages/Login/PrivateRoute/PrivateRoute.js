@@ -5,6 +5,7 @@ import useAuth from "../../../hooks/useAuth";
 function PrivateRoute({ children, ...rest }) {
     let { isLoading, user } = useAuth();
 
+    // loader for not logout on reload
     if (isLoading) {
         return <div className='text-center'>
             <div className="spinner-grow" role="status"><span className="visually-hidden">Loading...</span></div>
@@ -12,6 +13,7 @@ function PrivateRoute({ children, ...rest }) {
     }
 
     return (
+        // private route part
         <Route
             {...rest}
             render={({ location }) =>
@@ -29,6 +31,5 @@ function PrivateRoute({ children, ...rest }) {
         />
     );
 }
-
 
 export default PrivateRoute;

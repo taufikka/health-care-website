@@ -6,6 +6,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div>
+            {/* home pages banner and title  */}
             <div className="row background">
                 <div className="col-12 col-md-5 d-flex align-items-center ps-5">
                     <div className='text-center'>
