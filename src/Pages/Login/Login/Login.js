@@ -63,7 +63,7 @@ const Login = () => {
                     </div>
                 </div>
 
-                <button type="submit" onClick={handleLogIn} className="btn btn-success w-100">Sign in</button>
+                <button type="submit" onClick={handleLogIn} className="btn btn-success w-100">Log in</button>
             </form>
 
             <button className='btn btn-danger my-3' onClick={handleResetPass}>forgot password?</button>
