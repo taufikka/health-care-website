@@ -34,13 +34,13 @@ function App() {
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
 
-            <Route exact path='/about'>
+            <PrivateRoute exact path='/about'>
               <AboutUs></AboutUs>
-            </Route>
+            </PrivateRoute>
 
-            <Route exact path='/contact'>
+            <PrivateRoute exact path='/contact'>
               <Contact></Contact>
-            </Route>
+            </PrivateRoute>
 
             <Route exact path='/login'>
               <Login></Login>
