@@ -13,7 +13,7 @@ const Header = () => {
     }
     return (
         <div>
-            {/* navbar all options  */}
+            {/* navbar all options here..  */}
             <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand className='fw-bolder'>Evercare Hospital</Navbar.Brand>
